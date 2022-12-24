@@ -53,12 +53,17 @@
     inset 0px 4px 3px #fbf8ff;
 }
 
+.pictureContainer {
+}
+
 .profilePicture {
   position: absolute;
   top: 209px;
   left: 181px;
   width: 92px;
   height: 92px;
+  object-fit: cover;
+  object-position: top;
   border-radius: 100%;
-  background-color: #5736a3;
+  background-color: transparent;
 }
