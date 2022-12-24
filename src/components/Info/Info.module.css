@@ -40,3 +40,7 @@
   text-transform: uppercase;
   color: #373737;
 }
+
+.clicked {
+  background-color: #5cd3a8;
+}
