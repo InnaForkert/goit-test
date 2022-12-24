@@ -5,9 +5,15 @@ import { groupNumbers } from "../../utils/groupNumbers";
 export function Info({ tweets, followers, cardId }) {
   const [clicked, setClicked] = useState(false);
 
+  function handleClick() {
+    setClicked(!clicked);
+    localStorage.setItem(cardId, JSON.stringify(!clicked));
+  }
+
   useEffect(() => {
-    console.log(cardId);
-  }, [clicked, cardId]);
+    const currentClicked = JSON.parse(localStorage.getItem(cardId));
+    setClicked(currentClicked);
+  }, [cardId]);
 
   return (
     <div className={css.infoSection}>
@@ -19,7 +25,7 @@ export function Info({ tweets, followers, cardId }) {
       </ul>
       <button
         className={`${css.button} ${clicked ? css.clicked : null}`}
-        onClick={() => setClicked(!clicked)}
+        onClick={handleClick}
       >
         {clicked ? "Following" : "Follow"}
       </button>
