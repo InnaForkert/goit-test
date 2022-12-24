@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user": "Stepan Bandera",
+      "tweets": 666,
+      "followers": 42000000,
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/0d/SBandera.jpg"
+    },
+    {
+      "id": 2,
+      "user": "Roman Shuhevych",
+      "tweets": 654,
+      "followers": 455440,
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD_%D0%A8%D1%83%D1%85%D0%B5%D0%B2%D0%B8%D1%87_%281945%29.jpg/375px-%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD_%D0%A8%D1%83%D1%85%D0%B5%D0%B2%D0%B8%D1%87_%281945%29.jpg"
+    },
+    {
+      "id": 3,
+      "user": "Volodymyr Vynnychenko",
+      "tweets": 454,
+      "followers": 12005,
+      "avatar": "https://osvita.ua/doc/images/news/605/60512/25_.jpg"
+    },
+    {
+      "id": 4,
+      "user": "Mykhailo Hrushevs'kyi",
+      "tweets": 195,
+      "followers": 4500,
+      "avatar": "https://osvita.ua/doc/images/news/605/60512/26__novyj_razmer.jpg"
+    },
+    {
+      "id": 5,
+      "user": "Evhen Konovalec'",
+      "tweets": 545,
+      "followers": 1254,
+      "avatar": "https://osvita.ua/doc/images/news/605/60512/29__novyj_razmer.jpg"
+    },
+    {
+      "id": 6,
+      "user": "Symon Petlyura",
+      "tweets": 125,
+      "followers": 450,
+      "avatar": "https://osvita.ua/doc/images/news/605/60512/33__novyj_razmer.jpg"
+    }
+  ]
+}
