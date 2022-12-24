@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import css from "./Info.module.css";
 import { groupNumbers } from "../../utils/groupNumbers";
 
-export function Info({ tweets, followers }) {
+export function Info({ tweets, followers, cardId }) {
   const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    console.log(cardId);
+  }, [clicked, cardId]);
 
   return (
     <div className={css.infoSection}>
@@ -15,7 +19,7 @@ export function Info({ tweets, followers }) {
       </ul>
       <button
         className={`${css.button} ${clicked ? css.clicked : null}`}
-        onClick={setClicked(!clicked)}
+        onClick={() => setClicked(!clicked)}
       >
         {clicked ? "Following" : "Follow"}
       </button>
